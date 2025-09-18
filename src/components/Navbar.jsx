@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,11 +17,23 @@ export default function Navbar() {
 
       {/* Mobile menu button */}
       <button 
-        className="md:hidden"
+        className="md:hidden text-xl"
         onClick={() => setIsOpen(!isOpen)}
       >
         ☰
       </button>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <div className="absolute top-full left-0 w-full bg-gray-900 md:hidden">
+          <ul className="flex flex-col p-4 gap-4">
+            <li><a href="#hero" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Home</a></li>
+            <li><a href="#about" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>About</a></li>
+            <li><a href="#projects" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Projects</a></li>
+            <li><a href="#contact" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Contact</a></li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
