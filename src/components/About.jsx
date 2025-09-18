@@ -8,10 +8,7 @@ export default function About() {
       <p className="max-w-2xl text-center text-gray-700 leading-relaxed">
         I’m <span className="font-semibold">Alamu Jeremiah</span>, a passionate
         frontend developer who loves building clean, modern, and responsive
-        websites using React and Tailwind CSS. <br /> <br />
-        My goal is to craft user-friendly experiences that combine functionality
-        with elegant design. When I’m not coding, I enjoy learning new
-        technologies and improving my problem-solving skills.
+        websites using React and Tailwind CSS.
       </p>
     </section>
   );

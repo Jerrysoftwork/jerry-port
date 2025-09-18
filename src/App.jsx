@@ -9,12 +9,17 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div className="font-sans">
+      {/* Navbar always on top */}
       <Navbar />
+
+      {/* Sections */}
       <Hero />
       <About />
       <Projects />
       <Skills />
       <Contact />
+
+      {/* Footer */}
       <Footer />
     </div>
   );
