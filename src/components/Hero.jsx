@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-16">
+    <section id="hero" className="h-screen w-full flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 to-gray-800 text-white px-4">
       <h1 className="text-5xl font-bold">
         Hi, I'm Toluwanimi Jeremiah <span className="inline-block animate-bounce">👋</span>
       </h1>

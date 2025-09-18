@@ -1,11 +1,16 @@
+import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 
-export default function App() {
+function App() {
   return (
     <div className="font-sans">
       <Navbar />
       <Hero />
+      <About />
     </div>
   );
 }
+
+export default App;
