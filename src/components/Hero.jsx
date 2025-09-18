@@ -1,20 +1,29 @@
+import profilePic from "../assets/jerry.jpg"; // adjust name if different
+
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="h-screen flex flex-col justify-center items-center bg-gray-900 text-white text-center"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-900 text-white px-6"
     >
-      <h1 className="text-5xl font-bold">Hi, I’m Alamu Jeremiah 👋</h1>
-      <p className="mt-4 text-lg text-gray-300">
-        Frontend Developer | React | Tailwind Enthusiast
-      </p>
-      <div className="mt-6">
-        <a
-          href="#projects"
-          className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl text-white font-medium shadow-lg"
-        >
-          View My Work
-        </a>
+      {/* Text Section */}
+      <div className="flex-1 text-center md:text-left">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          Hi, I’m <span className="text-indigo-400">Alamu Jeremiah</span> 👋
+        </h1>
+        <p className="text-lg md:text-xl text-gray-300">
+          A passionate frontend developer building modern and responsive web
+          applications.
+        </p>
+      </div>
+
+      {/* Image Section */}
+      <div className="flex-1 flex justify-center mt-8 md:mt-0">
+        <img
+          src={profilePic}
+          alt="Alamu Jeremiah"
+          className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg border-4 border-indigo-400"
+        />
       </div>
     </section>
   );
