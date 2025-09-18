@@ -9,12 +9,12 @@ export default function Projects() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
         {/* Project Card 1 */}
         <div className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-semibold mb-2">Project One</h3>
+          <h3 className="text-xl font-semibold mb-2">Cogniverse AI</h3>
           <p className="text-gray-600 mb-4">
-            A short description of your first project goes here.
+            Cogniverse AI is an intelligent chat assistant designed to help users with conversational AI support. It features dynamic theme and font-size settings, easy chat history access, and a clean, responsive design. Built for seamless interaction and productivity.
           </p>
           <a
-            href="#"
+            href="https://cogniverse-bot.netlify.app/"
             className="text-blue-500 font-medium hover:underline"
             target="_blank"
             rel="noopener noreferrer"
