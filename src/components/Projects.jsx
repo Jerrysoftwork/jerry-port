@@ -51,12 +51,19 @@ export default function Projects() {
 
         {/* Project Card 3 */}
         <div className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-semibold mb-2">Project Three</h3>
+          <h3 className="text-xl font-semibold mb-2">Connectify</h3>
           <p className="text-gray-600 mb-4">
-            A third project description — could be personal or a client project.
+            Connectify is a polished, modern React/Vite app built to make
+            connections seamless. With a sleek, responsive interface, it
+            delivers fast performance, intuitive navigation, and a smooth user
+            experience across devices. Whether you’re accessing from desktop,
+            tablet, or mobile, Connectify ensures accessibility and style. Key
+            features include dynamic layouts, clean typography, and optimized
+            load times, all tailored with attention to detail so users feel
+            instantly engaged.
           </p>
           <a
-            href="#"
+            href="https://connectify-ivory.vercel.app/"
             className="text-blue-500 font-medium hover:underline"
             target="_blank"
             rel="noopener noreferrer"
